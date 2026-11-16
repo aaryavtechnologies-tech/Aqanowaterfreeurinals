@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgCryst" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <filter id="crystGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" rx="20" fill="url(#bgCryst)" />
+
+  <text x="400" y="50" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" text-anchor="middle">Microscopic Crystal Structure (CaCO₃)</text>
+  <text x="400" y="75" font-family="system-ui, sans-serif" font-weight="400" font-size="14" fill="#94A3B8" text-anchor="middle">Physical conversion from Calcite to Aragonite under catalytic turbulence</text>
+
+  <!-- Left: Calcite -->
+  <g transform="translate(60, 110)">
+    <rect width="320" height="290" rx="14" fill="#182234" stroke="#DC2626" stroke-width="1.5" filter="url(#crystGlow)" />
+    <!-- Microscopy View Circle -->
+    <circle cx="160" cy="110" r="75" fill="#0A0F1D" stroke="#EF4444" stroke-width="2" />
+
+    <!-- Sharp needle-like Calcite crystals -->
+    <polygon points="130,130 155,70 165,120" fill="#F87171" opacity="0.9" />
+    <polygon points="150,110 185,60 170,135" fill="#EF4444" opacity="0.85" />
+    <polygon points="120,95 160,110 110,130" fill="#DC2626" opacity="0.8" />
+    <polygon points="170,120 205,95 185,145" fill="#F87171" opacity="0.9" />
+    <polygon points="140,80 180,90 150,130" fill="#B91C1C" opacity="0.75" />
+
+    <text x="160" y="215" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#F87171" text-anchor="middle">CALCITE (Hard Scale)</text>
+    <text x="160" y="238" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Sharp, dendritic needle geometry</text>
+    <text x="160" y="258" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Bonds aggressively to copper, tiles &amp; coils</text>
+    <text x="160" y="278" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Chokes pipes &amp; increases power consumption</text>
+  </g>
+
+  <!-- Right: Aragonite -->
+  <g transform="translate(420, 110)">
+    <rect width="320" height="290" rx="14" fill="#182234" stroke="#10B981" stroke-width="1.5" filter="url(#crystGlow)" />
+    <!-- Microscopy View Circle -->
+    <circle cx="160" cy="110" r="75" fill="#0A0F1D" stroke="#10B981" stroke-width="2" />
+
+    <!-- Smooth Spherical Aragonite Crystals -->
+    <circle cx="140" cy="100" r="22" fill="#10B981" opacity="0.85" />
+    <circle cx="135" cy="95" r="14" fill="#6EE7B7" opacity="0.9" />
+    <circle cx="180" cy="115" r="18" fill="#10B981" opacity="0.85" />
+    <circle cx="176" cy="112" r="11" fill="#6EE7B7" opacity="0.9" />
+    <circle cx="155" cy="130" r="15" fill="#059669" opacity="0.8" />
+    <circle cx="120" cy="125" r="12" fill="#10B981" opacity="0.8" />
+    <circle cx="175" cy="85" r="10" fill="#6EE7B7" opacity="0.8" />
+
+    <text x="160" y="215" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#34D399" text-anchor="middle">ARAGONITE (Conditioned)</text>
+    <text x="160" y="238" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Smooth, microscopic rounded spheres</text>
+    <text x="160" y="258" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Cannot bind to pipes, fittings or heating rods</text>
+    <text x="160" y="278" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">• Flushes away harmlessly in the stream</text>
+  </g>
+</svg>

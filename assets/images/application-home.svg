@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="homeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+    <filter id="shadowH" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0284C7" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#homeBg)" />
+
+  <!-- Modern House Illustration -->
+  <g transform="translate(180, 80)" filter="url(#shadowH)">
+    <!-- Roof -->
+    <polygon points="120,20 20,90 220,90" fill="#0369A1" />
+    <!-- Building Body -->
+    <rect x="40" y="90" width="160" height="150" fill="#FFFFFF" rx="4" />
+    <!-- Door -->
+    <rect x="100" y="160" width="40" height="80" rx="2" fill="#0284C7" />
+    <!-- Windows -->
+    <rect x="55" y="110" width="35" height="35" rx="3" fill="#7DD3FC" />
+    <rect x="150" y="110" width="35" height="35" rx="3" fill="#7DD3FC" />
+    <!-- Window Crossbars -->
+    <line x1="72" y1="110" x2="72" y2="145" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="55" y1="127" x2="90" y2="127" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="167" y1="110" x2="167" y2="145" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="150" y1="127" x2="185" y2="127" stroke="#FFFFFF" stroke-width="2" />
+
+    <!-- Water Shower & Appliance Protection Icons floating -->
+    <circle cx="15" cy="50" r="28" fill="#FFFFFF" />
+    <text x="15" y="58" font-size="22" text-anchor="middle">🚿</text>
+
+    <circle cx="225" cy="50" r="28" fill="#FFFFFF" />
+    <text x="225" y="58" font-size="22" text-anchor="middle">✨</text>
+  </g>
+
+  <!-- Title & Features -->
+  <rect x="40" y="280" width="520" height="90" rx="12" fill="#FFFFFF" filter="url(#shadowH)" />
+  <text x="60" y="312" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#0F172A">Flats, Villas &amp; Independent Bungalows</text>
+  <text x="60" y="336" font-family="system-ui, sans-serif" font-size="13" fill="#475569">• Silky soft skin &amp; hair fall control • Zero white stains on luxury CP fittings</text>
+  <text x="60" y="354" font-family="system-ui, sans-serif" font-size="13" fill="#475569">• Protects geysers, solar heaters &amp; front-load washing machines</text>
+</svg>

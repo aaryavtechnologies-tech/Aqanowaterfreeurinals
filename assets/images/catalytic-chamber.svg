@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="chamberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="coreAlloy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="waterFlowPath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.3" />
+    </linearGradient>
+    <filter id="glowLight" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#chamberBg)" />
+
+  <!-- Header -->
+  <text x="40" y="55" font-family="system-ui, sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">How Catalytic Water Conditioning Works</text>
+  <text x="40" y="82" font-family="system-ui, sans-serif" font-weight="400" font-size="14" fill="#94A3B8">Hydrodynamic Turbulence + Galvanic Core converts Calcite to Aragonite</text>
+
+  <!-- Main Pipe Section -->
+  <g transform="translate(40, 110)">
+    <!-- Pipe Outer Walls -->
+    <rect x="0" y="0" width="720" height="220" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2" />
+    <rect x="0" y="20" width="720" height="180" fill="#0B132B" />
+
+    <!-- Flow Gradient overlay -->
+    <rect x="0" y="20" width="720" height="180" fill="url(#waterFlowPath)" />
+
+    <!-- SECTION 1: INLET (HARD WATER) -->
+    <g transform="translate(20, 30)">
+      <text x="10" y="15" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#F87171">1. Hard Water Inflow</text>
+      <text x="10" y="32" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">Ca²⁺ &amp; Mg²⁺ Dissolved Ions</text>
+      <!-- Sharp Calcite Crystal Shapes -->
+      <polygon points="40,70 55,50 70,75 55,90" fill="#EF4444" opacity="0.8" />
+      <polygon points="90,110 110,80 125,120 100,130" fill="#EF4444" opacity="0.8" />
+      <polygon points="30,130 50,115 60,140 40,150" fill="#EF4444" opacity="0.8" />
+      <polygon points="120,60 135,45 145,70 130,80" fill="#EF4444" opacity="0.8" />
+      <!-- Adhesive scale on pipe boundary -->
+      <rect x="0" y="-10" width="160" height="10" fill="#DC2626" opacity="0.7" />
+      <rect x="0" y="160" width="160" height="10" fill="#DC2626" opacity="0.7" />
+      <text x="80" y="155" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#FCA5A5" text-anchor="middle">Adherent Pipe Scale</text>
+    </g>
+
+    <!-- SECTION 2: CATALYTIC CHAMBER CORE -->
+    <g transform="translate(260, 20)">
+      <!-- Chamber Housing -->
+      <rect x="0" y="0" width="200" height="180" fill="#0284C7" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2" />
+      <text x="100" y="25" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#38BDF8" text-anchor="middle">2. Catalytic Alloy Core</text>
+      <!-- Special Alloy Internal Blades / Turbulator -->
+      <g transform="translate(25, 40)">
+        <polygon points="20,0 45,95 0,95" fill="url(#coreAlloy)" filter="url(#glowLight)" />
+        <polygon points="75,95 100,0 50,0" fill="url(#coreAlloy)" filter="url(#glowLight)" />
+        <polygon points="130,0 155,95 105,95" fill="url(#coreAlloy)" filter="url(#glowLight)" />
+      </g>
+      <!-- Ion Shear & Micro-vortex lines -->
+      <path d="M10,80 Q 50,40 100,80 T 190,80" fill="none" stroke="#67E8F9" stroke-width="2" stroke-dasharray="5 3" />
+      <path d="M10,120 Q 50,150 100,110 T 190,130" fill="none" stroke="#67E8F9" stroke-width="2" stroke-dasharray="5 3" />
+      <text x="100" y="165" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FCD34D" text-anchor="middle">Galvanic Transformation Zone</text>
+    </g>
+
+    <!-- SECTION 3: OUTLET (CONDITIONED WATER) -->
+    <g transform="translate(500, 30)">
+      <text x="20" y="15" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#34D399">3. Aragonite Crystals</text>
+      <text x="20" y="32" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">Non-stick, Micro-spheres</text>
+      <!-- Spherical Aragonite Crystals -->
+      <circle cx="50" cy="70" r="10" fill="#10B981" />
+      <circle cx="50" cy="70" r="6" fill="#6EE7B7" />
+      <circle cx="100" cy="115" r="14" fill="#10B981" />
+      <circle cx="100" cy="115" r="9" fill="#6EE7B7" />
+      <circle cx="65" cy="135" r="8" fill="#10B981" />
+      <circle cx="150" cy="85" r="12" fill="#10B981" />
+      <circle cx="150" cy="85" r="7" fill="#6EE7B7" />
+      <circle cx="180" cy="125" r="9" fill="#10B981" />
+      <!-- Clean pipe boundary (no scale sticking) -->
+      <line x1="0" y1="-10" x2="220" y2="-10" stroke="#10B981" stroke-width="3" stroke-dasharray="4 2" />
+      <line x1="0" y1="170" x2="220" y2="170" stroke="#10B981" stroke-width="3" stroke-dasharray="4 2" />
+      <text x="110" y="165" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#6EE7B7" text-anchor="middle">Clean Pipe Wall (Zero Deposit)</text>
+    </g>
+  </g>
+
+  <!-- Comparison Summary Cards Bottom -->
+  <g transform="translate(40, 360)">
+    <g transform="translate(0, 0)">
+      <rect width="345" height="100" rx="10" fill="#1E293B" stroke="#EF4444" stroke-width="1" />
+      <text x="20" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#F87171">BEFORE: Untreated Calcite (CaCO₃)</text>
+      <text x="20" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Sharp needle-like adhesive crystals cling to pipes</text>
+      <text x="20" y="70" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Blocks geysers, shower nozzles &amp; creates lime stains</text>
+      <text x="20" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Causes hair dryness, skin irritation &amp; high power bills</text>
+    </g>
+
+    <g transform="translate(375, 0)">
+      <rect width="345" height="100" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="1" />
+      <text x="20" y="30" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#34D399">AFTER: Conditioned Aragonite (CaCO₃)</text>
+      <text x="20" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Smooth microscopic spheres that simply wash away</text>
+      <text x="20" y="70" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Retains vital minerals while preventing any scale build-up</text>
+      <text x="20" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#CBD5E1">• Soft water feel on skin &amp; hair, dissolves existing crust</text>
+    </g>
+  </g>
+</svg>

@@ -26,20 +26,36 @@ export default function VideoSection({ onOpenDemo }) {
       desc: 'Quick visual demonstration of instant soap foaming and mineral crystallization habit modification.',
       duration: '0:12',
     },
+    {
+      id: 4,
+      src: '/assets/videos/mollisaqua-video-4.mp4',
+      badge: 'Site Operating Action',
+      title: 'Continuous High Flow Delivery',
+      desc: 'Live observation of water conditioning output showing consistent crystal clear stream and turbulence-induced redox conditioning.',
+      duration: '0:22',
+    },
+    {
+      id: 5,
+      src: '/assets/videos/mollisaqua-video-5.mp4',
+      badge: 'Real-Time Verification',
+      title: 'Direct Inline Conditioning in Action',
+      desc: 'Demonstration of water flowing through the inline unit, verifying robust construction and smooth fluid dynamics.',
+      duration: '0:15',
+    },
   ];
 
   return (
     <section id="videos" className="section-py video-showcase-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Live Video Proof</span>
+          <span className="section-badge">Live Video Proof (5 Videos)</span>
           <h2 className="section-title">Watch MOLLISAQUA® in Action</h2>
           <p className="section-desc">
             Witness the physical catalytic conditioning process through real operational video clips. See how our unit delivers smooth flow and immediate water conditioning.
           </p>
         </div>
 
-        <div className="grid-3 video-grid" style={{ gap: '2rem' }}>
+        <div className="video-grid">
           {videos.map((vid) => (
             <div key={vid.id} className="video-card">
               <div className="video-player-wrapper">

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PipeSlider from '../components/PipeSlider';
 import SavingsCalculator from '../components/SavingsCalculator';
+import VideoSection from '../components/VideoSection';
 import CatalogueSection from '../components/CatalogueSection';
 import CtaRibbon from '../components/CtaRibbon';
 import FaqAccordion from '../components/FaqAccordion';
@@ -298,6 +299,9 @@ export default function HomePage({ onOpenDemo }) {
           <SavingsCalculator onOpenDemo={onOpenDemo} />
         </div>
       </section>
+
+      {/* Live Video Showcase Section */}
+      <VideoSection onOpenDemo={onOpenDemo} />
 
       {/* Official Catalogues Section (English & Gujarati) */}
       <CatalogueSection />

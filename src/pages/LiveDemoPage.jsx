@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import VideoSection from '../components/VideoSection';
 import CatalogueSection from '../components/CatalogueSection';
 import CtaRibbon from '../components/CtaRibbon';
 
@@ -226,6 +227,9 @@ export default function LiveDemoPage({ onOpenDemo }) {
           </div>
         </div>
       </section>
+
+      {/* Live Video Demos Section */}
+      <VideoSection onOpenDemo={onOpenDemo} />
 
       {/* Google Map Section */}
       <section className="section-py bg-light">

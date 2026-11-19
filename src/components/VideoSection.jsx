@@ -1,0 +1,92 @@
+import React from 'react';
+
+export default function VideoSection({ onOpenDemo }) {
+  const videos = [
+    {
+      id: 1,
+      src: '/assets/videos/mollisaqua-video-1.mp4',
+      badge: 'Flow Demonstration',
+      title: 'High Flow & Zero Pressure Drop',
+      desc: 'Real test showcasing pressurized water passing smoothly through the catalytic unit without any loss of line velocity.',
+      duration: '0:20',
+    },
+    {
+      id: 2,
+      src: '/assets/videos/mollisaqua-video-2.mp4',
+      badge: 'Featured Walkthrough',
+      title: 'Core Working & Performance Demo',
+      desc: 'In-depth demonstration explaining the 26-metal alloy catalytic action and physical descaling mechanism.',
+      duration: '0:55',
+    },
+    {
+      id: 3,
+      src: '/assets/videos/mollisaqua-video-3.mp4',
+      badge: 'Field Test',
+      title: 'Conditioned Water & Lathering Test',
+      desc: 'Quick visual demonstration of instant soap foaming and mineral crystallization habit modification.',
+      duration: '0:12',
+    },
+  ];
+
+  return (
+    <section id="videos" className="section-py video-showcase-section">
+      <div className="container">
+        <div className="section-header">
+          <span className="section-badge">Live Video Proof</span>
+          <h2 className="section-title">Watch MOLLISAQUA® in Action</h2>
+          <p className="section-desc">
+            Witness the physical catalytic conditioning process through real operational video clips. See how our unit delivers smooth flow and immediate water conditioning.
+          </p>
+        </div>
+
+        <div className="grid-3 video-grid" style={{ gap: '2rem' }}>
+          {videos.map((vid) => (
+            <div key={vid.id} className="video-card">
+              <div className="video-player-wrapper">
+                <video
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="video-player"
+                  aria-label={vid.title}
+                >
+                  <source src={vid.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <span className="video-duration-badge">{vid.duration}</span>
+              </div>
+
+              <div className="video-card-body">
+                <span className="badge badge-accent" style={{ marginBottom: '0.5rem', display: 'inline-block' }}>
+                  {vid.badge}
+                </span>
+                <h3 className="video-title">{vid.title}</h3>
+                <p className="video-desc">{vid.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="video-section-cta" style={{ marginTop: '3rem', textAlign: 'center' }}>
+          <div style={{ display: 'inline-flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={onOpenDemo}
+            >
+              📅 Book Live Demo in Shela, Ahmedabad
+            </button>
+            <a
+              href="https://wa.me/917984515685?text=Hello%20Mukeshbhai,%20I%20watched%20the%20demonstration%20videos%20on%20your%20website%20and%20want%20to%20know%20more."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              💬 WhatsApp Video Enquiry
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

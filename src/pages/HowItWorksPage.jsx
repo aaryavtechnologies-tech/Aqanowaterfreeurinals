@@ -47,14 +47,14 @@ export default function HowItWorksPage({ onOpenDemo }) {
               </div>
             </div>
 
-            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '20px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+            <div style={{ background: '#ffffff', padding: '1.5rem', borderRadius: '20px', border: '1px solid #e2e8f0', textAlign: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.06)' }}>
               <img
-                src="/assets/images/catalytic-chamber.svg"
-                alt="MOLLISAQUA Water Conditioner Working Diagram"
-                style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', margin: '0 auto' }}
+                src="/assets/images/mollisaqua-product-units.jpg"
+                alt="MOLLISAQUA Water Conditioner Genuine Units"
+                style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px', margin: '0 auto', display: 'block' }}
               />
-              <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#64748b' }}>
-                Precision stainless steel housing encasing the 26-metal catalytic alloy core with dual BSP threaded ends.
+              <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#475569', fontWeight: 600 }}>
+                Precision heavy-duty stainless steel housing encasing the 26-metal catalytic alloy core with dual BSP threaded ends.
               </p>
             </div>
           </div>

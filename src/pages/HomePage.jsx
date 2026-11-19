@@ -66,13 +66,19 @@ export default function HomePage({ onOpenDemo }) {
             </div>
 
             <div className="hero-image-wrapper">
-              <div className="hero-image-card">
+              <div className="hero-image-card" style={{ background: '#ffffff', padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <img
-                  src="/assets/images/product-conditioner.svg"
-                  alt="MOLLISAQUA Catalytic Water Conditioner Unit"
+                  src="/assets/images/mollisaqua-product-units.jpg"
+                  alt="MOLLISAQUA Water Conditioner Genuine Product Range"
                   width="600"
-                  height="450"
+                  height="400"
+                  style={{ objectFit: 'contain', width: '100%', height: 'auto', borderRadius: '10px' }}
                 />
+                <div style={{ marginTop: '0.75rem', textAlign: 'center', width: '100%', borderTop: '1px solid #e2e8f0', paddingTop: '0.5rem' }}>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#0f172a' }}>
+                    Official MOLLISAQUA® Product Range • High Grade Precision Stainless Steel
+                  </span>
+                </div>
               </div>
             </div>
           </div>

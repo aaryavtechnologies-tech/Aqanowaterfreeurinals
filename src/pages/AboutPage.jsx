@@ -157,6 +157,17 @@ export default function AboutPage({ onOpenDemo }) {
             </p>
           </div>
 
+          <div style={{ maxWidth: '820px', margin: '0 auto 2.5rem', background: '#ffffff', padding: '1.25rem', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+            <img
+              src="/assets/images/mollisaqua-product-units.jpg"
+              alt="MOLLISAQUA Water Conditioner Genuine Units"
+              style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px', display: 'block', margin: '0 auto' }}
+            />
+            <p style={{ marginTop: '0.75rem', fontSize: '0.9rem', color: '#475569', fontWeight: 600 }}>
+              Genuine MOLLISAQUA® Water Conditioner Line (Made in India • Heavy Duty Stainless Steel)
+            </p>
+          </div>
+
           <div className="table-responsive">
             <table className="comparison-table">
               <thead>

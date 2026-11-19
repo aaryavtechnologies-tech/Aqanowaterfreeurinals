@@ -43,28 +43,41 @@ export default function LiveDemoPage({ onOpenDemo }) {
             <span>/</span>
             <span aria-current="page">Live Demonstration</span>
           </nav>
-          <h1>Experience MOLLISAQUA® in Action</h1>
-          <p>Visit our live demonstration center in Shela, Ahmedabad. Touch, test, and witness catalytic water conditioning before making an investment.</p>
+          <h1>Live Product Demonstration</h1>
+          <p>
+            Experience MOLLISAQUA® in action. Watch our recorded live demonstration video clips below, or schedule an in-person visit to our experience center in Shela, Ahmedabad.
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
+            <a href="#demo-videos" className="btn btn-secondary btn-sm">
+              📹 Watch 5 Live Demo Videos
+            </a>
+            <a href="#book-demo" className="btn btn-outline-white btn-sm">
+              📅 Book In-Person Visit in Shela
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Demo Center Overview & Booking Form */}
-      <section className="section-py">
+      {/* 1. Live Demonstration Videos (Featured at Top of Demo Page) */}
+      <VideoSection onOpenDemo={onOpenDemo} />
+
+      {/* 2. In-Person Demo Center Overview & Booking Form */}
+      <section id="book-demo" className="section-py bg-light">
         <div className="container">
           <div className="grid-2" style={{ gap: '3rem', alignItems: 'flex-start' }}>
             {/* Left Info Column */}
             <div>
               <span className="section-badge">Live Experience Center</span>
-              <h2 className="section-title">Seeing Is Believing</h2>
+              <h2 className="section-title">Visit Our Live Demonstration Center</h2>
               <p style={{ color: '#475569', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                We invite homeowners, society management committee members, factory plant managers, and progressive farmers to witness a live comparative demonstration. Bring your own borewell or tap water sample for testing!
+                We invite homeowners, society management committee members, factory plant managers, and progressive farmers to witness a live comparative demonstration. <strong>Bring your own borewell or tap water sample for testing!</strong>
               </p>
 
               {/* What You Will Experience */}
-              <div style={{ background: '#f8fafc', padding: '1.75rem', borderRadius: '16px', border: '1px solid #e2e8f0', marginBottom: '2rem' }}>
-                <h4 style={{ color: '#0f172a', marginBottom: '1rem' }}>🔬 What You Will Experience:</h4>
+              <div style={{ background: 'white', padding: '1.75rem', borderRadius: '16px', border: '1px solid #e2e8f0', marginBottom: '2rem', boxShadow: '0 4px 15px rgba(0,0,0,0.04)' }}>
+                <h4 style={{ color: '#0f172a', marginBottom: '1rem' }}>🔬 What You Will Experience in Person:</h4>
                 <ul className="benefit-list" style={{ color: '#475569', lineHeight: 1.8 }}>
-                  <li><strong>Live Water Flow Test:</strong> Observe high-speed water passage through the catalytic alloy core with zero pressure drop.</li>
+                  <li><strong>Live Water Flow Test:</strong> Observe pressurized water passing through the catalytic alloy core with zero pressure drop.</li>
                   <li><strong>Lather &amp; Surface Softness Comparison:</strong> Test lather formation comparing raw municipal/borewell water against conditioned water.</li>
                   <li><strong>Mineral Crystallography Demonstration:</strong> Understand how Calcite alters into non-adherent Aragonite powder.</li>
                   <li><strong>Tailored Sizing Consult:</strong> Personalized engineering consultation for your specific pipe diameter, pump rating, and daily consumption.</li>
@@ -228,11 +241,8 @@ export default function LiveDemoPage({ onOpenDemo }) {
         </div>
       </section>
 
-      {/* Live Video Demos Section */}
-      <VideoSection onOpenDemo={onOpenDemo} />
-
-      {/* Google Map Section */}
-      <section className="section-py bg-light">
+      {/* 3. Google Map Section */}
+      <section className="section-py">
         <div className="container">
           <div className="section-header">
             <span className="section-badge">Navigation &amp; Location</span>
@@ -255,10 +265,10 @@ export default function LiveDemoPage({ onOpenDemo }) {
         </div>
       </section>
 
-      {/* Official Catalogues */}
+      {/* 4. Official Catalogues */}
       <CatalogueSection />
 
-      {/* CTA Ribbon */}
+      {/* 5. CTA Ribbon */}
       <CtaRibbon onOpenDemo={onOpenDemo} />
     </main>
   );

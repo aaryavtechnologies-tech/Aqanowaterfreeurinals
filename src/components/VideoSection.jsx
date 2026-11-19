@@ -45,13 +45,14 @@ export default function VideoSection({ onOpenDemo }) {
   ];
 
   return (
-    <section id="videos" className="section-py video-showcase-section">
+    <section id="demo-videos" className="section-py video-showcase-section">
+      <span id="videos" style={{ display: 'block', position: 'relative', top: '-80px', visibility: 'hidden' }}></span>
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Live Video Proof (5 Videos)</span>
-          <h2 className="section-title">Watch MOLLISAQUA® in Action</h2>
+          <span className="section-badge">🎥 Live Demonstration Videos (5 Clips)</span>
+          <h2 className="section-title">Live Product Demonstration: See It in Action</h2>
           <p className="section-desc">
-            Witness the physical catalytic conditioning process through real operational video clips. See how our unit delivers smooth flow and immediate water conditioning.
+            Watch real-time catalytic water conditioning demonstrations across these 5 live video clips showing zero pressure drop, instant lathering, and continuous high-velocity flow.
           </p>
         </div>
 

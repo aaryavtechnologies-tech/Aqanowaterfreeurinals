@@ -92,6 +92,13 @@ export default function DemoModal({ isOpen, onClose }) {
             </button>
           </div>
 
+          <div style={{ background: '#f0f9ff', border: '1px solid #bae6fd', borderRadius: '8px', padding: '0.65rem 0.9rem', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', flexWrap: 'wrap', fontSize: '0.85rem', color: '#0369a1' }}>
+            <span>📹 Want to see live demo clips right now?</span>
+            <a href="/live-demo#demo-videos" onClick={onClose} style={{ fontWeight: 700, color: '#0284c7', textDecoration: 'underline' }}>
+              Watch 5 Demo Videos →
+            </a>
+          </div>
+
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="modalName">

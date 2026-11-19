@@ -91,10 +91,12 @@ export default function LiveDemoPage({ onOpenDemo }) {
                   A/1501, Riviera Springs, Skycity, Club O7 Road, Shela, Ahmedabad – 380058, Gujarat, India.
                 </p>
                 <p style={{ color: '#64748b', fontSize: '0.9rem', margin: '0 0 1rem 0' }}>
-                  <strong>Key Contact:</strong> Mukeshbhai Thakkar (Param Industries)
+                  <strong>Key Contact:</strong> Mukeshbhai Thakkar (Param Industries)<br />
+                  <strong>Email:</strong> <a href="mailto:envisave24@gmail.com" style={{ color: '#0284c7', textDecoration: 'none', fontWeight: 600 }}>envisave24@gmail.com</a>
                 </p>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                   <a href="tel:+917984515685" className="btn btn-outline btn-sm">📞 Call +91 79845 15685</a>
+                  <a href="mailto:envisave24@gmail.com" className="btn btn-outline btn-sm">✉️ Email Us</a>
                   <a href="https://wa.me/917984515685?text=Hello%20Mukeshbhai,%20I%20would%20like%20to%20visit%20Riviera%20Springs%20for%20a%20Live%20Demo" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">💬 WhatsApp Directions</a>
                 </div>
               </div>

@@ -94,6 +94,20 @@ export default function ContactPage({ onOpenDemo }) {
                   </div>
                 </div>
 
+                {/* Email Card */}
+                <div style={{ display: 'flex', gap: '1.25rem', background: '#f8fafc', padding: '1.5rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+                  <div style={{ fontSize: '2rem', background: '#e0f2fe', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px' }}>
+                    ✉️
+                  </div>
+                  <div>
+                    <h4 style={{ color: '#0f172a', margin: '0 0 0.25rem 0' }}>Official Email Address</h4>
+                    <p style={{ color: '#64748b', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>Send drawings, water test reports &amp; RFQs</p>
+                    <a href="mailto:envisave24@gmail.com" style={{ fontSize: '1.15rem', fontWeight: 700, color: '#0284c7', textDecoration: 'none' }}>
+                      envisave24@gmail.com
+                    </a>
+                  </div>
+                </div>
+
                 {/* Address Card */}
                 <div style={{ display: 'flex', gap: '1.25rem', background: '#f8fafc', padding: '1.5rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
                   <div style={{ fontSize: '2rem', background: '#e0f2fe', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px' }}>

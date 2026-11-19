@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/postbuild.js || node -e \"console.log('Build precompiled')\"",
+    "build": "vite build && node scripts/postbuild.js",
     "preview": "vite preview"
   },
   "dependencies": {

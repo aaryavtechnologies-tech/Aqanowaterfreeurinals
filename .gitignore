@@ -5,10 +5,6 @@ Thumbs.db
 # Dependencies
 node_modules/
 
-# Production build
-dist/
-dist-ssr/
-
 # Editor directories
 .vscode/
 .idea/

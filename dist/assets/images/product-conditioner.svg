@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0F9FF" />
+      <stop offset="100%" stop-color="#E0F2FE" />
+    </linearGradient>
+    <linearGradient id="ssBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="25%" stop-color="#F8FAFC" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="75%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="ssGoldCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="waterFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="600" rx="24" fill="url(#bgGrad)" />
+
+  <!-- Technical Background Grid -->
+  <g opacity="0.15" stroke="#0284C7" stroke-width="1">
+    <line x1="50" y1="50" x2="750" y2="50" />
+    <line x1="50" y1="150" x2="750" y2="150" />
+    <line x1="50" y1="250" x2="750" y2="250" />
+    <line x1="50" y1="350" x2="750" y2="350" />
+    <line x1="50" y1="450" x2="750" y2="450" />
+    <line x1="50" y1="550" x2="750" y2="550" />
+    <line x1="100" y1="50" x2="100" y2="550" />
+    <line x1="250" y1="50" x2="250" y2="550" />
+    <line x1="400" y1="50" x2="400" y2="550" />
+    <line x1="550" y1="50" x2="550" y2="550" />
+    <line x1="700" y1="50" x2="700" y2="550" />
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(50, 45)">
+    <rect width="260" height="34" rx="17" fill="#0284C7" />
+    <text x="130" y="22" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CATALYTIC WATER CONDITIONER</text>
+  </g>
+  <text x="50" y="115" font-family="system-ui, sans-serif" font-weight="800" font-size="28" fill="#0F172A">Heavy-Duty Catalytic Water Conditioner</text>
+  <text x="50" y="140" font-family="system-ui, sans-serif" font-weight="500" font-size="15" fill="#475569">Physical Catalytic Anti-Scale Treatment • Zero Salt • Zero Power • Zero Maintenance</text>
+
+  <!-- Product Illustration -->
+  <g transform="translate(100, 200)" filter="url(#softShadow)">
+    <!-- Inlet Pipe Left -->
+    <rect x="0" y="90" width="70" height="70" rx="4" fill="url(#ssBody)" />
+    <rect x="65" y="75" width="20" height="100" rx="4" fill="#64748B" />
+    <!-- Water Inlet Flow Indicator -->
+    <path d="M-40 125 L-5 125" stroke="#0284C7" stroke-width="4" stroke-dasharray="8 4" stroke-linecap="round" />
+    <polygon points="-5,120 10,125 -5,130" fill="#0284C7" />
+    <text x="-15" y="105" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#0284C7" text-anchor="middle">HARD WATER INLET</text>
+
+    <!-- Main Stainless Steel Chamber -->
+    <rect x="85" y="50" width="430" height="150" rx="14" fill="url(#ssBody)" stroke="#475569" stroke-width="2" />
+    <!-- Collar rings -->
+    <rect x="110" y="45" width="16" height="160" rx="4" fill="#475569" />
+    <rect x="474" y="45" width="16" height="160" rx="4" fill="#475569" />
+
+    <!-- Cutaway Window Showing Internal Catalytic Alloy Chamber -->
+    <rect x="150" y="70" width="300" height="110" rx="8" fill="#0F172A" />
+    <!-- Dynamic vortex inside chamber -->
+    <path d="M160 125 C 200 90, 220 160, 260 125 C 300 90, 320 160, 360 125 C 400 90, 420 160, 440 125" fill="none" stroke="url(#waterFlow)" stroke-width="26" opacity="0.6" stroke-linecap="round" />
+
+    <!-- Catalytic Alloy Turbulence Cores -->
+    <g transform="translate(170, 85)">
+      <polygon points="15,0 30,70 0,70" fill="url(#ssGoldCore)" />
+      <polygon points="65,70 80,0 50,0" fill="url(#ssGoldCore)" />
+      <polygon points="115,0 130,70 100,70" fill="url(#ssGoldCore)" />
+      <polygon points="165,70 180,0 150,0" fill="url(#ssGoldCore)" />
+      <polygon points="215,0 230,70 200,70" fill="url(#ssGoldCore)" />
+    </g>
+
+    <!-- Crystal transformation sparkles inside cutaway -->
+    <circle cx="210" cy="125" r="4" fill="#FFFFFF" />
+    <circle cx="270" cy="115" r="3" fill="#38BDF8" />
+    <circle cx="330" cy="135" r="5" fill="#FFFFFF" />
+    <circle cx="390" cy="120" r="4" fill="#38BDF8" />
+
+    <!-- Outlet Pipe Right -->
+    <rect x="515" y="75" width="20" height="100" rx="4" fill="#64748B" />
+    <rect x="535" y="90" width="70" height="70" rx="4" fill="url(#ssBody)" />
+    <!-- Water Outlet Flow Indicator -->
+    <path d="M610 125 L650 125" stroke="#059669" stroke-width="4" stroke-dasharray="8 4" stroke-linecap="round" />
+    <polygon points="650,120 665,125 650,130" fill="#059669" />
+    <text x="640" y="105" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">CONDITIONED WATER</text>
+
+    <!-- Brand engraving on unit -->
+    <text x="300" y="40" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0F172A" text-anchor="middle" letter-spacing="3">AQUAPRO CATALYTIC CONDITIONER</text>
+  </g>
+
+  <!-- Feature Callout Cards Below -->
+  <g transform="translate(50, 440)">
+    <!-- Feature 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="160" height="110" rx="14" fill="#FFFFFF" filter="url(#softShadow)" />
+      <circle cx="35" cy="35" r="18" fill="#E0F2FE" />
+      <text x="35" y="41" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">⚡</text>
+      <text x="35" y="70" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0F172A">Zero Electricity</text>
+      <text x="35" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">100% Passive Flow</text>
+    </g>
+
+    <!-- Feature 2 -->
+    <g transform="translate(180, 0)">
+      <rect width="160" height="110" rx="14" fill="#FFFFFF" filter="url(#softShadow)" />
+      <circle cx="35" cy="35" r="18" fill="#ECFDF5" />
+      <text x="35" y="41" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🧂</text>
+      <text x="35" y="70" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0F172A">No Salt or Resin</text>
+      <text x="35" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Zero Monthly Refills</text>
+    </g>
+
+    <!-- Feature 3 -->
+    <g transform="translate(360, 0)">
+      <rect width="160" height="110" rx="14" fill="#FFFFFF" filter="url(#softShadow)" />
+      <circle cx="35" cy="35" r="18" fill="#FEF3C7" />
+      <text x="35" y="41" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🛡️</text>
+      <text x="35" y="70" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0F172A">Zero Water Loss</text>
+      <text x="35" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">No Backwash Drain</text>
+    </g>
+
+    <!-- Feature 4 -->
+    <g transform="translate(540, 0)">
+      <rect width="160" height="110" rx="14" fill="#FFFFFF" filter="url(#softShadow)" />
+      <circle cx="35" cy="35" r="18" fill="#EDE9FE" />
+      <text x="35" y="41" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">⏳</text>
+      <text x="35" y="70" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0F172A">25+ Yrs Lifespan</text>
+      <text x="35" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Solid Alloy Core</text>
+    </g>
+  </g>
+</svg>

@@ -28,4 +28,15 @@ if (fs.existsSync(appCss)) {
   fs.copyFileSync(appCss, path.resolve('public/assets/app.css'));
 }
 
+// Ensure route directories exist in dist
+const routes = ['about', 'features', 'applications', 'how-it-works', 'live-demo', 'contact', 'products'];
+routes.forEach((r) => {
+  const dir = path.resolve(`dist/${r}`);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const srcHtml = path.resolve(`${r}/index.html`);
+  if (fs.existsSync(srcHtml)) {
+    fs.copyFileSync(srcHtml, path.join(dir, 'index.html'));
+  }
+});
+
 console.log('✓ Postbuild: synced production assets to assets/ and public/assets/');

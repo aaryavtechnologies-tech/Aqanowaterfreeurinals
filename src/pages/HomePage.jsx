@@ -4,6 +4,7 @@ import PipeSlider from '../components/PipeSlider';
 import SavingsCalculator from '../components/SavingsCalculator';
 import VideoSection from '../components/VideoSection';
 import CatalogueSection from '../components/CatalogueSection';
+import OtherProductsSection from '../components/OtherProductsSection';
 import CtaRibbon from '../components/CtaRibbon';
 import FaqAccordion from '../components/FaqAccordion';
 
@@ -311,6 +312,9 @@ export default function HomePage({ onOpenDemo }) {
 
       {/* Official Catalogues Section (English & Gujarati) */}
       <CatalogueSection />
+
+      {/* Extended Eco-Friendly & Building Products Section */}
+      <OtherProductsSection onOpenDemo={onOpenDemo} />
 
       {/* Live Demo Ribbon */}
       <CtaRibbon onOpenDemo={onOpenDemo} />

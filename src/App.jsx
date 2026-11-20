@@ -13,6 +13,7 @@ import ApplicationsPage from './pages/ApplicationsPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import LiveDemoPage from './pages/LiveDemoPage';
 import ContactPage from './pages/ContactPage';
+import ProductsPage from './pages/ProductsPage';
 
 export default function App() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/applications" element={<ApplicationsPage onOpenDemo={handleOpenDemo} />} />
         <Route path="/how-it-works" element={<HowItWorksPage onOpenDemo={handleOpenDemo} />} />
         <Route path="/live-demo" element={<LiveDemoPage onOpenDemo={handleOpenDemo} />} />
+        <Route path="/products" element={<ProductsPage onOpenDemo={handleOpenDemo} />} />
         <Route path="/contact" element={<ContactPage onOpenDemo={handleOpenDemo} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

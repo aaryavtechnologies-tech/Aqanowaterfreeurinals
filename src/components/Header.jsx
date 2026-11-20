@@ -53,12 +53,22 @@ export default function Header({ onOpenDemo }) {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/products" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
+                  Other Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
                   Contact Us
                 </NavLink>
               </li>
 
               {/* Mobile-only additional drawer links */}
+              <li className="nav-item mobile-only-item">
+                <NavLink to="/products" className="nav-link" onClick={closeMenu}>
+                  🏢 Other Sustainable Products
+                </NavLink>
+              </li>
               <li className="nav-item mobile-only-item">
                 <a href="/#catalogues" className="nav-link" onClick={closeMenu}>
                   📥 Download Catalogues

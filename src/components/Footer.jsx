@@ -36,6 +36,7 @@ export default function Footer({ onOpenDemo }) {
               <li><Link to="/applications">Applications</Link></li>
               <li><Link to="/how-it-works">How It Works</Link></li>
               <li><Link to="/live-demo">Live Demonstration</Link></li>
+              <li><Link to="/products" style={{ color: 'var(--color-accent)', fontWeight: 600 }}>🏢 Other Products (9 Solutions)</Link></li>
               <li><a href="/#videos">📹 Watch Product Videos</a></li>
               <li><a href="/#catalogues">📥 Download Catalogues (ENG/GUJ)</a></li>
               <li><Link to="/contact">Contact Us</Link></li>

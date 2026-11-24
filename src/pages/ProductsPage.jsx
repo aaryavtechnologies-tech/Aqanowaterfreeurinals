@@ -59,13 +59,13 @@ export default function ProductsPage({ onOpenDemo }) {
           </h1>
 
           <p>
-            Beyond catalytic water conditioning, explore our range of corrosion-proof roofing, insulated PUF panels, solar air-conditioning, WPC doors, and coming-soon zero-water urinals and heat pumps.
+            Beyond catalytic water conditioning, explore our certified range of Waterless Odourless Urinals, Stainless Steel Waste Couplings (www.waterfreeurinal.in), Heat Pumps, Corrosion-Proof Roofing, Insulated PUF Panels, Solar AC, and WPC Doors.
           </p>
 
           {/* Quick Stats Grid */}
           <div className="banner-stats-grid">
             <div className="banner-stat-card">
-              <span className="banner-stat-number">9</span>
+              <span className="banner-stat-number">10</span>
               <span className="banner-stat-desc">Specialized Eco Products</span>
             </div>
             <div className="banner-stat-card">
@@ -73,8 +73,8 @@ export default function ProductsPage({ onOpenDemo }) {
               <span className="banner-stat-desc">Anti-Corrosive &amp; Rust-Proof</span>
             </div>
             <div className="banner-stat-card">
-              <span className="banner-stat-number">70%+</span>
-              <span className="banner-stat-desc">Power &amp; Water Savings</span>
+              <span className="banner-stat-number">₹4,000</span>
+              <span className="banner-stat-desc">Waterless Urinal / Piece</span>
             </div>
             <div className="banner-stat-card">
               <span className="banner-stat-number">Direct</span>
@@ -85,7 +85,7 @@ export default function ProductsPage({ onOpenDemo }) {
           {/* High Visibility Action Buttons */}
           <div className="page-banner-cta-group">
             <a href="#other-products" className="btn btn-accent btn-lg">
-              <span>📦</span> Explore All 9 Products ↓
+              <span>📦</span> Explore All 10 Products ↓
             </a>
             <a
               href="https://wa.me/917984515685?text=Hello%20Mukeshbhai,%20I%20would%20like%20to%20inquire%20about%20your%20extended%20sustainable%20product%20range."

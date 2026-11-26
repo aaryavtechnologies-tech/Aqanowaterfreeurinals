@@ -1613,6 +1613,143 @@ dialog::backdrop {
 }
 
 /* --------------------------------------------------------------------------
+   Interactive Social, Review & Map Navigation Pills (User Request Match)
+   -------------------------------------------------------------------------- */
+.social-pills-wrapper {
+  margin-block: 0.5rem;
+}
+
+.social-pills-header {
+  margin-bottom: 0.85rem;
+}
+
+.social-pills-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 0.25rem;
+}
+
+.social-pills-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.social-pills-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 0.85rem;
+}
+
+.social-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1.5px solid #CBD5E1;
+  padding: 0.55rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.925rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.3;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.social-pill-btn:hover {
+  background-color: #F8FAFC;
+  color: #0284C7;
+  border-color: #0284C7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.18);
+}
+
+.social-pill-btn:active {
+  transform: translateY(0);
+}
+
+.social-pill-icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.social-pill-text {
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* Footer Variant */
+.footer-social-bar {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-social-bar-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-social-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 210, 255, 0.15);
+  color: var(--color-accent);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-social-bar-heading p {
+  color: #CBD5E1;
+  font-size: 0.925rem;
+  margin: 0;
+}
+
+.social-pills-footer .social-pill-btn {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.social-pills-footer .social-pill-btn:hover {
+  background-color: #F0F9FF;
+  border-color: var(--color-accent);
+  color: #0284C7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 210, 255, 0.3);
+}
+
+/* Card Variant */
+.social-pills-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* --------------------------------------------------------------------------
    Product Catalogue Download Section
    -------------------------------------------------------------------------- */
 .catalogue-grid {

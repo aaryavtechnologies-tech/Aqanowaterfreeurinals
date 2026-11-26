@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import CatalogueSection from '../components/CatalogueSection';
 import FaqAccordion from '../components/FaqAccordion';
 import CtaRibbon from '../components/CtaRibbon';
+import SocialPills from '../components/SocialPills';
+import { SOCIAL_LINKS } from '../config/socialLinks';
 
 export default function ContactPage({ onOpenDemo }) {
   const [formData, setFormData] = useState({
@@ -100,11 +102,16 @@ export default function ContactPage({ onOpenDemo }) {
                     ✉️
                   </div>
                   <div>
-                    <h4 style={{ color: '#0f172a', margin: '0 0 0.25rem 0' }}>Official Email Address</h4>
+                    <h4 style={{ color: '#0f172a', margin: '0 0 0.25rem 0' }}>Official Email Addresses</h4>
                     <p style={{ color: '#64748b', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>Send drawings, water test reports &amp; RFQs</p>
-                    <a href="mailto:envisave24@gmail.com" style={{ fontSize: '1.15rem', fontWeight: 700, color: '#0284c7', textDecoration: 'none' }}>
-                      envisave24@gmail.com
-                    </a>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                      <a href={SOCIAL_LINKS.emailNirali.url} style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0284c7', textDecoration: 'none' }}>
+                        {SOCIAL_LINKS.emailNirali.label}
+                      </a>
+                      <a href={SOCIAL_LINKS.emailEnvisave.url} style={{ fontSize: '1rem', fontWeight: 600, color: '#0369a1', textDecoration: 'none' }}>
+                        {SOCIAL_LINKS.emailEnvisave.label}
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -123,6 +130,13 @@ export default function ContactPage({ onOpenDemo }) {
                     <small style={{ color: '#0284c7', fontWeight: 600 }}>Param Industries, Ahmedabad</small>
                   </div>
                 </div>
+
+                {/* Quick Navigation & Social Pills */}
+                <SocialPills
+                  variant="card"
+                  title="Direct Connect & Navigation"
+                  subtitle="Get real-time directions on Google Maps, check reviews, follow on social media, or write to us:"
+                />
               </div>
             </div>
 

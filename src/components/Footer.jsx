@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SocialPills from './SocialPills';
+import { SOCIAL_LINKS } from '../config/socialLinks';
 
 export default function Footer({ onOpenDemo }) {
   return (
@@ -82,7 +84,8 @@ export default function Footer({ onOpenDemo }) {
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
               <div>
-                <a href="mailto:envisave24@gmail.com" style={{ color: '#FFFFFF', fontWeight: 600 }}>envisave24@gmail.com</a>
+                <a href={SOCIAL_LINKS.emailNirali.url} style={{ color: '#FFFFFF', fontWeight: 600, display: 'block' }}>{SOCIAL_LINKS.emailNirali.label}</a>
+                <a href={SOCIAL_LINKS.emailEnvisave.url} style={{ color: '#CBD5E1', fontSize: '0.88rem' }}>{SOCIAL_LINKS.emailEnvisave.label}</a>
               </div>
             </div>
 
@@ -99,6 +102,15 @@ export default function Footer({ onOpenDemo }) {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Featured Social, Reviews, & Map Directions Pill Bar */}
+        <div className="footer-social-bar">
+          <div className="footer-social-bar-heading">
+            <span className="footer-social-badge">Quick Connect &amp; Location</span>
+            <p>Locate our demo center, leave Google reviews, follow our social handles, or write directly:</p>
+          </div>
+          <SocialPills variant="footer" />
         </div>
 
         <div className="footer-bottom">

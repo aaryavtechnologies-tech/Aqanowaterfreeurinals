@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import VideoSection from '../components/VideoSection';
 import CatalogueSection from '../components/CatalogueSection';
 import CtaRibbon from '../components/CtaRibbon';
+import SocialPills from '../components/SocialPills';
+import { SOCIAL_LINKS } from '../config/socialLinks';
 
 export default function LiveDemoPage({ onOpenDemo }) {
   const [formData, setFormData] = useState({
@@ -92,13 +94,18 @@ export default function LiveDemoPage({ onOpenDemo }) {
                 </p>
                 <p style={{ color: '#64748b', fontSize: '0.9rem', margin: '0 0 1rem 0' }}>
                   <strong>Key Contact:</strong> Mukeshbhai Thakkar (Param Industries)<br />
-                  <strong>Email:</strong> <a href="mailto:envisave24@gmail.com" style={{ color: '#0284c7', textDecoration: 'none', fontWeight: 600 }}>envisave24@gmail.com</a>
+                  <strong>Emails:</strong> <a href={SOCIAL_LINKS.emailNirali.url} style={{ color: '#0284c7', textDecoration: 'none', fontWeight: 600 }}>{SOCIAL_LINKS.emailNirali.label}</a> • <a href={SOCIAL_LINKS.emailEnvisave.url} style={{ color: '#0284c7', textDecoration: 'none', fontWeight: 600 }}>{SOCIAL_LINKS.emailEnvisave.label}</a>
                 </p>
-                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
                   <a href="tel:+917984515685" className="btn btn-outline btn-sm">📞 Call +91 79845 15685</a>
-                  <a href="mailto:envisave24@gmail.com" className="btn btn-outline btn-sm">✉️ Email Us</a>
+                  <a href={SOCIAL_LINKS.emailNirali.url} className="btn btn-outline btn-sm">✉️ Email Us</a>
                   <a href="https://wa.me/917984515685?text=Hello%20Mukeshbhai,%20I%20would%20like%20to%20visit%20Riviera%20Springs%20for%20a%20Live%20Demo" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">💬 WhatsApp Directions</a>
                 </div>
+                <SocialPills
+                  variant="card"
+                  title="Direct Map & Social Channels"
+                  subtitle="Instant one-click access to Google directions, reviews, and social profiles:"
+                />
               </div>
             </div>
 

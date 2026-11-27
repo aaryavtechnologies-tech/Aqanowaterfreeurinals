@@ -73,8 +73,8 @@ export default function ProductsPage({ onOpenDemo }) {
               <span className="banner-stat-desc">Anti-Corrosive &amp; Rust-Proof</span>
             </div>
             <div className="banner-stat-card">
-              <span className="banner-stat-number">₹4,000</span>
-              <span className="banner-stat-desc">Waterless Urinal / Piece</span>
+              <span className="banner-stat-number">₹10,000</span>
+              <span className="banner-stat-desc">Waterless Urinal (Incl. 18% GST)</span>
             </div>
             <div className="banner-stat-card">
               <span className="banner-stat-number">Direct</span>

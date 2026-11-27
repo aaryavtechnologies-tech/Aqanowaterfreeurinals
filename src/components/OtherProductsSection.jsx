@@ -11,14 +11,14 @@ export const productsData = [
     icon: '🚻',
     themeColor: '#0284c7',
     badgeText: 'Complete Ceramic Fixture',
-    price: '₹ 4,000 / Piece',
+    price: '₹ 10,000 / Piece (Incl. 18% GST)',
     image: '/assets/images/waterless-urinal-ceramic.jpg',
     gallery: [
       '/assets/images/waterless-urinal-ceramic.jpg',
       '/assets/images/waterless-urinal-front.jpg',
       '/assets/images/waterless-urinal-top-view.jpg',
     ],
-    quickSpecs: ['Zero Flush Water', 'Complete Odour Lock', '₹ 4,000 / Piece', 'Ceramic Vitreous China'],
+    quickSpecs: ['Zero Flush Water', 'Complete Odour Lock', '₹ 10,000 / Piece (Incl. 18% GST)', 'Ceramic Vitreous China'],
     description:
       'Engineered waterless and odourless ceramic urinal that operates with 100% zero water flush. Features built-in odour-trap coupling and anti-bacterial hygiene barrier. Ideal for commercial complexes, malls, offices, factories, hospitals, and educational institutions.',
     highlights: [
@@ -26,7 +26,7 @@ export const productsData = [
       'Specialized mechanical odour-barrier prevents foul drain gases completely',
       'Zero flush valves, zero sensors, zero leaks, and zero electric pump costs',
       'High-grade stain-resistant ceramic vitreous china with anti-splash contour',
-      'Affordable direct manufacturer price of ₹ 4,000 / piece',
+      'Direct manufacturer price of ₹ 10,000 / piece (including 18% GST)',
     ],
     idealFor: 'Offices, IT Parks, Malls, Universities, Factories, Hospitals & Public Restrooms',
   },
